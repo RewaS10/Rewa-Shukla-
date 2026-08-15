@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rewa Shukla — Cybersecurity &amp; Photography</title>
+<meta name="description" content="Rewa Shukla — Cybersecurity student specializing in security operations, vulnerability management, network security, and photography.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== BACKGROUND SYSTEM ===================== -->
+<!-- Fixed canvas layers behind all content. Driven by scroll progress in script.js -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="bg-glow" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="site-header" id="site-header">
+  <nav class="nav">
+    <a href="#hero" class="nav-mark">RS</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#cybersecurity">Security</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#certifications">Credentials</a></li>
+      <li><a href="#photography">Photography</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Cybersecurity &middot; Networking &middot; Photography</p>
+      <h1 class="hero-name">Rewa Shukla</h1>
+      <p class="hero-statement">Secure. Observe. Capture.</p>
+      <div class="hero-actions">
+        <a href="assets/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Resume</a>
+        <a href="#projects" class="btn btn-ghost">Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+    </div>
+    <button class="scroll-indicator" id="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Scroll</span>
+    </button>
+  </section>
+
+ <!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+
+  <div class="about-atmosphere" aria-hidden="true"></div>
+
+  <div class="section-inner">
+
+    <div class="about-grid">
+
+      <!-- LEFT : Moonlit Polaroid -->
+      <div class="about-photo">
+        <div class="polaroid">
+          <span class="polaroid-tape" aria-hidden="true"></span>
+
+          <div class="polaroid-frame">
+            <img src="assets/mine.jpeg" alt="Rewa Shukla">
+            <span class="polaroid-texture" aria-hidden="true"></span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="about-content glass-card about-glass-panel">
+
+        <p class="section-eyebrow about-reveal">About</p>
+
+        <div class="about-text">
+          <p class="about-reveal">
+            <strong>Hi, I'm Rewa.</strong>
+          </p>
+
+          <p class="about-reveal">
+           Consider me a professionally suspicious person — I'm into Security Operations and GRC, which mostly means I've made "but what could go wrong here" my default setting, long before anyone's paying me to ask it.
+          </p>
+
+          <p class="about-reveal">
+            Off the clock, the suspicion switches off. Photography is where I stop looking for flaws and just look — at light, at timing, at what a single frame can hold still.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ===================== OBSERVATORY OF DISCIPLINES ===================== -->
+  <section class="observatory" id="skills">
+    <div class="section-inner observatory-inner">
+      <p class="section-eyebrow">Observatory of Disciplines</p>
+      <h2 class="section-title">Every system tells a story.<br>Every star, a new discipline.</h2>
+
+      <div class="obs-stage">
+
+        <!-- LEFT: telescope lens -->
+        <div class="obs-lens-col">
+          <button class="telescope-arrow tele-prev" id="telescope-prev" aria-label="Previous discipline">&#8249;</button>
+
+          <div class="telescope-lens" id="telescope-lens">
+            <!-- SVG: rim, glass, reticle — always visible -->
+            <svg class="tele-rim-svg" viewBox="0 0 560 560" aria-hidden="true">
+              <defs>
+                <radialGradient id="lensGlass" cx="36%" cy="30%" r="78%">
+                  <stop offset="0%"   stop-color="rgba(255,255,255,0.11)"/>
+                  <stop offset="40%"  stop-color="rgba(255,255,255,0.025)"/>
+                  <stop offset="100%" stop-color="rgba(0,0,0,0.40)"/>
+                </radialGradient>
+                <radialGradient id="lensVignette" cx="50%" cy="50%" r="55%">
+                  <stop offset="55%" stop-color="rgba(0,0,0,0)"/>
+                  <stop offset="100%" stop-color="rgba(0,0,0,0.62)"/>
+                </radialGradient>
+                <linearGradient id="rimMetal" x1="10%" y1="0%" x2="90%" y2="100%">
+                  <stop offset="0%"   stop-color="#d4d6db"/>
+                  <stop offset="40%"  stop-color="#5a5d64"/>
+                  <stop offset="60%"  stop-color="#7c7f86"/>
+                  <stop offset="100%" stop-color="#b8bcc4"/>
+                </linearGradient>
+                <linearGradient id="rimInner" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%"   stop-color="rgba(255,255,255,0.20)"/>
+                  <stop offset="100%" stop-color="rgba(255,255,255,0.04)"/>
+                </linearGradient>
+                <!-- clip so star SVGs stay inside lens -->
+                <clipPath id="lensClip">
+                  <circle cx="280" cy="280" r="258"/>
+                </clipPath>
+              </defs>
+
+              <!-- outer metallic rings -->
+              <circle cx="280" cy="280" r="276" fill="none" stroke="url(#rimMetal)"  stroke-width="8"/>
+              <circle cx="280" cy="280" r="265" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+              <circle cx="280" cy="280" r="262" fill="none" stroke="rgba(0,0,0,0.4)" stroke-width="2"/>
+
+              <!-- glass tint + vignette -->
+              <circle cx="280" cy="280" r="258" fill="url(#lensGlass)"/>
+
+              <!-- reticle markings -->
+              <circle cx="280" cy="280" r="210" fill="none" stroke="rgba(255,255,255,0.055)" stroke-width="1"/>
+              <circle cx="280" cy="280" r="150" fill="none" stroke="rgba(255,255,255,0.04)"  stroke-width="1"/>
+              <!-- cardinal tick marks -->
+              <line x1="280" y1="22"  x2="280" y2="52"  stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+              <line x1="280" y1="508" x2="280" y2="538" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+              <line x1="22"  y1="280" x2="52"  y2="280" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+              <line x1="508" y1="280" x2="538" y2="280" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+              <!-- diagonal minor ticks -->
+              <line x1="86"  y1="86"  x2="104" y2="104" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+              <line x1="474" y1="86"  x2="456" y2="104" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+              <line x1="86"  y1="474" x2="104" y2="456" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+              <line x1="474" y1="474" x2="456" y2="456" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+              <!-- tiny center crosshair -->
+              <line x1="270" y1="280" x2="290" y2="280" stroke="rgba(255,255,255,0.28)" stroke-width="1"/>
+              <line x1="280" y1="270" x2="280" y2="290" stroke="rgba(255,255,255,0.28)" stroke-width="1"/>
+              <circle cx="280" cy="280" r="3" fill="rgba(255,255,255,0.30)"/>
+
+              <!-- Star SVGs — each discipline, shown/hidden by JS, clipped to lens -->
+              <g clip-path="url(#lensClip)">
+
+                <!-- 0: Cybersecurity — blue-white pulsing star with signal rings -->
+                <g class="disc-star" id="star-0">
+                  <circle cx="280" cy="280" r="258" fill="radial-gradient(circle,#020c1b,#050f22)"/>
+                  <circle cx="280" cy="280" r="258" fill="rgba(2,12,28,0.95)"/>
+                  <circle cx="280" cy="280" r="22" fill="rgba(180,210,255,0.9)">
+                    <animate attributeName="r" values="22;26;22" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="fill-opacity" values="0.9;0.7;0.9" dur="3s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="280" cy="280" r="14" fill="rgba(220,235,255,1)"/>
+                  <circle cx="280" cy="280" r="6"  fill="white"/>
+                  <!-- pulse rings -->
+                  <circle cx="280" cy="280" r="50" fill="none" stroke="rgba(140,190,255,0.35)" stroke-width="1.5">
+                    <animate attributeName="r" values="40;90;40" dur="4s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="280" cy="280" r="70" fill="none" stroke="rgba(140,190,255,0.22)" stroke-width="1">
+                    <animate attributeName="r" values="60;130;60" dur="4s" begin="1s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.3;0;0.3" dur="4s" begin="1s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="280" cy="280" r="90" fill="none" stroke="rgba(100,160,255,0.15)" stroke-width="1">
+                    <animate attributeName="r" values="80;200;80" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+                    <animate attributeName="stroke-opacity" values="0.2;0;0.2" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+                  </circle>
+                  <!-- glow halo -->
+                  <circle cx="280" cy="280" r="40" fill="rgba(100,160,255,0.12)"/>
+                </g>
+
+                <!-- 1: Networking — constellation node network -->
+                <g class="disc-star" id="star-1">
+                  <circle cx="280" cy="280" r="258" fill="rgba(3,10,20,0.95)"/>
+                  <!-- network edges -->
+                  <line x1="280" y1="280" x2="180" y2="200" stroke="rgba(180,200,220,0.3)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="370" y2="190" stroke="rgba(180,200,220,0.3)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="400" y2="320" stroke="rgba(180,200,220,0.3)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="320" y2="400" stroke="rgba(180,200,220,0.3)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="160" y2="360" stroke="rgba(180,200,220,0.3)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="200" y2="140" stroke="rgba(180,200,220,0.15)" stroke-width="1"/>
+                  <line x1="180" y1="200" x2="370" y2="190" stroke="rgba(180,200,220,0.15)" stroke-width="1"/>
+                  <line x1="370" y1="190" x2="400" y2="320" stroke="rgba(180,200,220,0.15)" stroke-width="1"/>
+                  <line x1="400" y1="320" x2="320" y2="400" stroke="rgba(180,200,220,0.15)" stroke-width="1"/>
+                  <line x1="320" y1="400" x2="160" y2="360" stroke="rgba(180,200,220,0.15)" stroke-width="1"/>
+                  <line x1="160" y1="360" x2="180" y2="200" stroke="rgba(180,200,220,0.10)" stroke-width="1"/>
+                  <!-- nodes -->
+                  <circle cx="280" cy="280" r="10" fill="rgba(200,215,235,0.95)"/>
+                  <circle cx="180" cy="200" r="6"  fill="rgba(180,200,225,0.8)"/>
+                  <circle cx="370" cy="190" r="5"  fill="rgba(180,200,225,0.7)"/>
+                  <circle cx="400" cy="320" r="6"  fill="rgba(180,200,225,0.8)"/>
+                  <circle cx="320" cy="400" r="5"  fill="rgba(180,200,225,0.7)"/>
+                  <circle cx="160" cy="360" r="4"  fill="rgba(180,200,225,0.6)"/>
+                  <circle cx="200" cy="140" r="3"  fill="rgba(180,200,225,0.5)"/>
+                  <!-- data pulse traveling edges -->
+                  <circle cx="0" cy="0" r="3" fill="rgba(220,235,255,0.9)">
+                    <animateMotion dur="3s" repeatCount="indefinite" path="M280,280 L180,200 L370,190 L400,320 L280,280"/>
+                  </circle>
+                </g>
+
+                <!-- 2: Cloud & Infrastructure — soft nebula cluster -->
+                <g class="disc-star" id="star-2">
+                  <circle cx="280" cy="280" r="258" fill="rgba(2,8,18,0.95)"/>
+                  <!-- nebula layers -->
+                  <circle cx="280" cy="270" r="100" fill="rgba(40,80,160,0.18)"/>
+                  <circle cx="300" cy="290" r="70"  fill="rgba(60,100,180,0.14)"/>
+                  <circle cx="260" cy="300" r="80"  fill="rgba(30,60,140,0.12)"/>
+                  <circle cx="280" cy="280" r="50"  fill="rgba(80,130,200,0.16)"/>
+                  <!-- stars within nebula -->
+                  <circle cx="260" cy="250" r="4" fill="rgba(200,220,255,0.85)"/>
+                  <circle cx="310" cy="260" r="3" fill="rgba(200,220,255,0.75)"/>
+                  <circle cx="290" cy="310" r="3.5" fill="rgba(210,225,255,0.8)"/>
+                  <circle cx="245" cy="295" r="2.5" fill="rgba(200,220,255,0.65)"/>
+                  <circle cx="320" cy="305" r="2"   fill="rgba(200,220,255,0.6)"/>
+                  <circle cx="270" cy="320" r="2"   fill="rgba(200,220,255,0.55)"/>
+                  <!-- central bright core -->
+                  <circle cx="280" cy="280" r="12" fill="rgba(160,200,255,0.7)"/>
+                  <circle cx="280" cy="280" r="5"  fill="rgba(220,235,255,0.95)"/>
+                  <!-- slow rotation -->
+                  <g transform-origin="280 280">
+                    <animateTransform attributeName="transform" type="rotate"
+                      values="0 280 280;360 280 280" dur="80s" repeatCount="indefinite"/>
+                    <ellipse cx="280" cy="200" rx="8" ry="4" fill="rgba(140,180,255,0.35)"/>
+                    <ellipse cx="350" cy="320" rx="6" ry="3" fill="rgba(140,180,255,0.28)"/>
+                  </g>
+                </g>
+
+                <!-- 3: Development & Automation — geometric star structure -->
+                <g class="disc-star" id="star-3">
+                  <circle cx="280" cy="280" r="258" fill="rgba(3,8,16,0.95)"/>
+                  <!-- outer hexagon -->
+                  <polygon points="280,160 368,220 368,340 280,400 192,340 192,220"
+                    fill="none" stroke="rgba(200,215,235,0.22)" stroke-width="1.5"/>
+                  <!-- inner hexagon rotated -->
+                  <polygon points="280,195 343,232 343,308 280,345 217,308 217,232"
+                    fill="none" stroke="rgba(200,215,235,0.16)" stroke-width="1">
+                    <animateTransform attributeName="transform" type="rotate"
+                      values="0 280 280;360 280 280" dur="45s" repeatCount="indefinite"/>
+                  </polygon>
+                  <!-- spokes -->
+                  <line x1="280" y1="280" x2="280" y2="160" stroke="rgba(200,215,235,0.20)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="368" y2="220" stroke="rgba(200,215,235,0.20)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="368" y2="340" stroke="rgba(200,215,235,0.20)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="280" y2="400" stroke="rgba(200,215,235,0.20)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="192" y2="340" stroke="rgba(200,215,235,0.20)" stroke-width="1"/>
+                  <line x1="280" y1="280" x2="192" y2="220" stroke="rgba(200,215,235,0.20)" stroke-width="1"/>
+                  <!-- vertex dots -->
+                  <circle cx="280" cy="160" r="4" fill="rgba(210,225,245,0.8)"/>
+                  <circle cx="368" cy="220" r="4" fill="rgba(210,225,245,0.8)"/>
+                  <circle cx="368" cy="340" r="4" fill="rgba(210,225,245,0.8)"/>
+                  <circle cx="280" cy="400" r="4" fill="rgba(210,225,245,0.8)"/>
+                  <circle cx="192" cy="340" r="4" fill="rgba(210,225,245,0.8)"/>
+                  <circle cx="192" cy="220" r="4" fill="rgba(210,225,245,0.8)"/>
+                  <!-- center core -->
+                  <circle cx="280" cy="280" r="16" fill="rgba(180,210,255,0.25)"/>
+                  <circle cx="280" cy="280" r="7"  fill="rgba(225,235,250,0.95)"/>
+                  <!-- orbiting spark -->
+                  <circle r="3" fill="rgba(200,220,255,0.9)">
+                    <animateMotion dur="8s" repeatCount="indefinite"
+                      path="M280,160 L368,220 L368,340 L280,400 L192,340 L192,220 Z"/>
+                  </circle>
+                </g>
+
+                <!-- 4: Research & Publications — golden observatory beacon -->
+                <g class="disc-star" id="star-4">
+                  <circle cx="280" cy="280" r="258" fill="rgba(5,6,10,0.95)"/>
+                  <!-- golden halo rings -->
+                  <circle cx="280" cy="280" r="90"  fill="none" stroke="rgba(244,197,66,0.18)" stroke-width="1.5"/>
+                  <circle cx="280" cy="280" r="130" fill="none" stroke="rgba(244,197,66,0.10)" stroke-width="1"/>
+                  <circle cx="280" cy="280" r="170" fill="none" stroke="rgba(244,197,66,0.07)" stroke-width="1"/>
+                  <!-- beacon rays (12 spokes) -->
+                  <g opacity="0.55">
+                    <line x1="280" y1="160" x2="280" y2="140" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="344" y1="196" x2="356" y2="185" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="380" y1="260" x2="395" y2="254" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="344" y1="324" x2="356" y2="335" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="280" y1="360" x2="280" y2="380" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="216" y1="324" x2="204" y2="335" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="180" y1="260" x2="165" y2="254" stroke="#F4C542" stroke-width="1.5"/>
+                    <line x1="216" y1="196" x2="204" y2="185" stroke="#F4C542" stroke-width="1.5"/>
+                  </g>
+                  <!-- warm core -->
+                  <circle cx="280" cy="280" r="30" fill="rgba(244,197,66,0.22)"/>
+                  <circle cx="280" cy="280" r="16" fill="rgba(250,210,100,0.7)">
+                    <animate attributeName="fill-opacity" values="0.7;0.4;0.7" dur="2.5s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="280" cy="280" r="7"  fill="rgba(255,235,160,1)"/>
+                  <!-- slow rotation of whole group -->
+                  <animateTransform attributeName="transform" type="rotate"
+                    values="0 280 280;360 280 280" dur="120s" repeatCount="indefinite"/>
+                </g>
+
+                <!-- 5: Photography — warm moon-gold star -->
+                <g class="disc-star" id="star-5">
+                  <circle cx="280" cy="280" r="258" fill="rgba(8,14,30,0.95)"/>
+                  <!-- warm blue ambient -->
+                  <circle cx="280" cy="280" r="150" fill="rgba(20,50,110,0.20)"/>
+                  <!-- crescent moon shape (two offset circles) -->
+                  <circle cx="280" cy="260" r="70" fill="rgba(244,200,80,0.15)"/>
+                  <!-- gold glow rings -->
+                  <circle cx="280" cy="275" r="55" fill="none" stroke="rgba(244,197,66,0.25)" stroke-width="2">
+                    <animate attributeName="stroke-opacity" values="0.25;0.12;0.25" dur="4s" repeatCount="indefinite"/>
+                  </circle>
+                  <circle cx="280" cy="275" r="80" fill="none" stroke="rgba(244,197,66,0.12)" stroke-width="1.5"/>
+                  <!-- star body -->
+                  <circle cx="280" cy="275" r="28" fill="rgba(244,200,100,0.35)"/>
+                  <circle cx="280" cy="275" r="16" fill="rgba(252,215,120,0.75)"/>
+                  <circle cx="280" cy="275" r="7"  fill="rgba(255,235,170,1)"/>
+                  <!-- scattered warm micro-stars -->
+                  <circle cx="200" cy="220" r="2.5" fill="rgba(255,220,120,0.7)"/>
+                  <circle cx="340" cy="200" r="2"   fill="rgba(255,220,120,0.6)"/>
+                  <circle cx="360" cy="330" r="2"   fill="rgba(255,220,120,0.55)"/>
+                  <circle cx="210" cy="350" r="2"   fill="rgba(255,220,120,0.6)"/>
+                  <circle cx="310" cy="370" r="1.5" fill="rgba(255,220,120,0.5)"/>
+                  <circle cx="155" cy="280" r="1.5" fill="rgba(255,220,120,0.45)"/>
+                </g>
+
+              </g><!-- end lensClip group -->
+
+              <!-- vignette on top of everything -->
+              <circle cx="280" cy="280" r="258" fill="url(#lensVignette)" pointer-events="none"/>
+              <!-- glass sheen highlight -->
+              <ellipse cx="230" cy="195" rx="70" ry="35"
+                fill="rgba(255,255,255,0.055)" transform="rotate(-30,230,195)"/>
+            </svg>
+
+            <!-- Drag hint -->
+            <div class="lens-drag-hint" id="lens-drag-hint" aria-hidden="true">drag to explore</div>
+          </div>
+
+          <button class="telescope-arrow tele-next" id="telescope-next" aria-label="Next discipline">&#8250;</button>
+        </div>
+
+        <!-- RIGHT: discipline detail panel -->
+        <div class="obs-detail-col" id="obs-detail">
+          <div class="disc-panel" id="disc-panel">
+            <!-- populated by JS -->
+          </div>
+        </div>
+
+      </div><!-- /.obs-stage -->
+
+      <!-- Bottom constellation-dot navigation -->
+      <div class="telescope-controls">
+        <div class="tele-nav-row">
+          <span class="tele-label" id="tele-counter">01 / 06</span>
+          <div class="telescope-dots" id="telescope-dots" role="tablist" aria-label="Select discipline"></div>
+          <span class="tele-discipline-name" id="tele-name">Cybersecurity</span>
+        </div>
+      </div>
+
+    </div><!-- /.section-inner -->
+  </section>
+
+  <!-- ===================== CYBERSECURITY FOCUS ===================== -->
+  <section class="cybersecurity" id="cybersecurity">
+    <div class="section-inner">
+      <p class="section-eyebrow">Focus</p>
+      <h2 class="section-title">Where I spend the most attention.</h2>
+
+      <div class="focus-grid">
+        <article class="glass-card focus-card">
+          <span class="focus-icon" aria-hidden="true">&#9673;</span>
+          <h3>SOC &amp; Blue Team</h3>
+          <p>Monitoring, triage, and response &mdash; reading signal out of noise in real time.</p>
+        </article>
+        <article class="glass-card focus-card">
+          <span class="focus-icon" aria-hidden="true">&#8853;</span>
+          <h3>Network Security</h3>
+          <p>Designing and validating the infrastructure that keeps traffic where it belongs.</p>
+        </article>
+        <article class="glass-card focus-card">
+          <span class="focus-icon" aria-hidden="true">&#9670;</span>
+          <h3>Threat Detection</h3>
+          <p>Recognizing the early shape of an attack before it becomes an incident.</p>
+        </article>
+        <article class="glass-card focus-card">
+          <span class="focus-icon" aria-hidden="true">&#9678;</span>
+          <h3>SIEM</h3>
+          <p>Correlating logs across systems to surface what actually matters.</p>
+        </article>
+        <article class="glass-card focus-card">
+          <span class="focus-icon" aria-hidden="true">&#10022;</span>
+          <h3>Security Research</h3>
+          <p>Investigating emerging vulnerabilities and the mechanics behind them.</p>
+        </article>
+        <article class="glass-card focus-card">
+          <span class="focus-icon" aria-hidden="true">&#9881;</span>
+          <h3>Automation</h3>
+          <p>Building tooling so detection and response don't depend on manual effort.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow">Featured Work</p>
+      <h2 class="section-title">Platforms built to make security analysis faster and more reliable.</h2>
+
+      <div class="project-list">
+
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <h3>NetTwin Analyzer</h3>
+            <p class="project-category">Cybersecurity Infrastructure Analysis Platform</p>
+            <p class="project-description">A cybersecurity infrastructure analysis platform capable of reconstructing enterprise network topologies from raw Cisco-style configurations.</p>
+            <ul class="project-features">
+              <li>Topology Reconstruction</li>
+              <li>Vulnerability Detection</li>
+              <li>Network Misconfiguration Analysis</li>
+              <li>Duplicate IP Detection</li>
+              <li>VLAN &amp; ACL Validation</li>
+              <li>ML-Based Risk Detection</li>
+            </ul>
+            <p class="project-highlight">Reduced manual infrastructure analysis effort by approximately 70% through automated validation and analysis workflows.</p>
+            <div class="project-stack">
+              <span>Python</span><span>FastAPI</span><span>NetworkX</span><span>Streamlit</span><span>Plotly</span><span>Isolation Forest</span>
+            </div>
+<div class="project-links">
+  <a 
+    href="https://github.com/RewaS10/NetTwin-Analyser"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub ↗
+  </a>
+
+  <a 
+    href="https://nettwin-analyser.streamlit.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="project-demo-link"
+  >
+    Show Tool ↗
+  </a>
+</div>
+          </div>
+        </article>
+
+<article class="project-card">
+  <div class="project-number">02</div>
+
+  <div class="project-body">
+    <h3>SOC 2 Audit Assistant</h3>
+
+    <p class="project-category">
+      Governance, Risk &amp; Compliance Automation
+    </p>
+
+    <p class="project-description">
+      An AI-assisted compliance and audit support platform designed to streamline
+      evidence mapping, audit preparation, compliance query handling, and
+      structured reporting.
+    </p>
+
+    <ul class="project-features">
+      <li>Compliance Query Processing</li>
+      <li>Evidence Mapping</li>
+      <li>Risk Classification</li>
+      <li>Audit Response Generation</li>
+      <li>Ownership Tracking</li>
+      <li>ISO 27001 &amp; SOC 2 Alignment</li>
+    </ul>
+
+    <div class="project-stack">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>Compliance Automation</span>
+    </div>
+
+    <div class="project-links">
+      <a
+        href="https://github.com/RewaS10/grc-audit-agent"
+        class="link-arrow"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+
+      <a
+        href="YOUR_DEPLOYED_URL"
+        class="link-arrow"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Show Tool ↗
+      </a>
+    </div>
+  </div>
+</article>
+
+
+<article class="project-card">
+  <div class="project-number">03</div>
+
+  <div class="project-body">
+    <h3>BlindSight</h3>
+
+    <p class="project-category">
+      AI-Powered Cybersecurity Accessibility Platform
+    </p>
+
+    <p class="project-description">
+      A threat detection platform designed to help users identify phishing
+      attempts, scam messages, suspicious links, and malicious content using
+      OCR and URL intelligence.
+    </p>
+
+    <ul class="project-features">
+      <li>OCR-Based Content Analysis</li>
+      <li>Phishing &amp; Scam Detection</li>
+      <li>URL Intelligence</li>
+      <li>Threat Scoring</li>
+      <li>Remediation Guidance</li>
+    </ul>
+
+    <div class="project-stack">
+      <span>FastAPI</span>
+      <span>React Native</span>
+      <span>OCR</span>
+      <span>VirusTotal API</span>
+    </div>
+
+    <div class="project-links">
+      <a
+        href="https://github.com/RewaS10/BlindSight"
+        class="link-arrow"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+
+      <a
+        href="YOUR_DEPLOYED_URL"
+        class="link-arrow"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Show Tool ↗
+      </a>
+    </div>
+  </div>
+</article>
+  <!-- ===================== RESEARCH & PUBLICATIONS ===================== -->
+  <section class="research" id="research">
+    <div class="section-inner">
+      <p class="section-eyebrow">Research &amp; Publications</p>
+      <h2 class="section-title">Where curiosity becomes contribution.</h2>
+
+      <div class="research-stage">
+
+        <article class="research-paper-card glass-card">
+          <div class="research-meta">
+            <span class="research-type-badge">Research Paper</span>
+            <span class="research-venue">ICDCIT 2026 — Student Research Symposium</span>
+          </div>
+          <h3 class="research-title">Cryptographic Applications in<br>Quantum Game Theory</h3>
+          <p class="research-abstract">
+            This research explores the intersection of cryptography and quantum game theory,
+            examining how cryptographic mechanisms can be applied within quantum strategic
+            environments to improve security, fairness, trust, and decision-making among
+            participants operating in emerging computational models.
+          </p>
+
+          <div class="research-topics">
+            <span>Quantum Game Theory</span>
+            <span>Cryptographic Protocols</span>
+            <span>Secure Multi-Party Interaction</span>
+            <span>Strategic Decision Systems</span>
+            <span>Emerging Security Applications</span>
+          </div>
+
+          <div class="research-footer">
+            <a href="#" class="btn btn-ghost research-pdf-btn" target="_blank" rel="noopener">
+              View Research Paper &rarr;
+            </a>
+            <div class="research-citation">
+              <span class="citation-label">Presented at</span>
+              <span class="citation-value">International Conference on Distributed Computing &amp; Internet Technology (ICDCIT) 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="research-side">
+          <div class="achievement-highlight glass-card">
+            <div class="achievement-medal">🏆</div>
+            <div class="achievement-body">
+              <p class="achievement-place">2<sup>nd</sup> Place</p>
+              <p class="achievement-event">Student Research Symposium</p>
+              <p class="achievement-context">ICDCIT 2026 — for research on Cryptographic Applications in Quantum Game Theory</p>
+            </div>
+          </div>
+
+          <div class="research-areas glass-card">
+            <h4>Topics Covered</h4>
+            <ul>
+              <li>Quantum Game Theory</li>
+              <li>Cryptographic Protocols</li>
+              <li>Secure Multi-Party Computation</li>
+              <li>Trust &amp; Fairness Mechanisms</li>
+              <li>Post-Quantum Security</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS VAULT ===================== -->
+  <section class="certifications" id="certifications">
+    <div class="section-inner">
+      <p class="section-eyebrow">Credentials</p>
+      <h2 class="section-title">The Vault.</h2>
+      <p class="certs-subtitle">Click any credential to verify on the issuing platform.</p>
+      <div class="certs-vault">
+
+  <!-- Google -->
+  <a 
+    href="https://coursera.org/share/1b78e15a468bb1b26326b24bef6e0006"
+    class="cert-badge glass-card"
+    target="_blank"
+    rel="noopener"
+    aria-label="View Google Cybersecurity Professional Certificate"
+  >
+    <div class="cert-issuer-mark cert-google">G</div>
+
+    <div class="cert-info">
+      <span class="cert-name">
+        Cybersecurity Professional Certificate
+      </span>
+
+      <span class="cert-issuer">
+        Google
+      </span>
+    </div>
+
+    <span class="cert-arrow">↗</span>
+  </a>
+
+
+  <!-- Fortinet FSE 1, 2, 3 -->
+  <a 
+    href="https://www.credly.com/users/rewa-shukla.07f914fe"
+    class="cert-badge glass-card"
+    target="_blank"
+    rel="noopener"
+    aria-label="View Fortinet FSE certifications"
+  >
+    <div class="cert-issuer-mark cert-fortinet">
+      FSE
+    </div>
+
+    <div class="cert-info">
+      <span class="cert-name">
+        FSE 1 · FSE 2 · FSE 3
+      </span>
+
+      <span class="cert-issuer">
+        Fortinet
+      </span>
+    </div>
+
+    <span class="cert-arrow">↗</span>
+  </a>
+
+
+ <!-- Cisco Credential Collection -->
+<a 
+  href="https://www.credly.com/users/rewa-shukla.07f914fe"
+  class="cert-badge cert-badge-collection glass-card"
+  target="_blank"
+  rel="noopener"
+  aria-label="View 11 Cisco credentials"
+>
+
+  <div class="cert-issuer-mark cert-cisco">
+    CIS
+  </div>
+
+  <div class="cert-info">
+
+    <span class="cert-name">
+      Cisco
+    </span>
+
+    <span class="cert-issuer">
+      11 credentials earned
+    </span>
+
+    <span class="cert-collection-link">
+      View all credentials ↗
+    </span>
+
+  </div>
+
+  <span class="cert-arrow">↗</span>
+
+</a>
+
+
+  <!-- CompTIA Security+ -->
+  <div 
+    class="cert-badge cert-badge-progress glass-card"
+    aria-label="CompTIA Security Plus Currently Studying"
+  >
+    <div class="cert-issuer-mark cert-comptia">
+      +
+    </div>
+
+    <div class="cert-info">
+
+      <span class="cert-name">
+        Security+
+      </span>
+
+      <span class="cert-issuer">
+        CompTIA
+      </span>
+
+      <span class="cert-studying-badge">
+        <span class="studying-dot"></span>
+        Currently Studying
+      </span>
+
+    </div>
+
+    <span class="cert-progress-ring" aria-hidden="true">
+
+      <svg viewBox="0 0 36 36" width="36" height="36">
+
+        <circle
+          cx="18"
+          cy="18"
+          r="15.9"
+          fill="none"
+          stroke="rgba(255,255,255,0.08)"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="18"
+          cy="18"
+          r="15.9"
+          fill="none"
+          stroke="var(--p3-gold)"
+          stroke-width="2"
+          stroke-dasharray="60 100"
+          stroke-dashoffset="25"
+          stroke-linecap="round"
+          transform="rotate(-90 18 18)"
+        />
+
+      </svg>
+
+    </span>
+
+  </div>
+
+
+  <!-- AWS Cloud Practitioner -->
+  <div 
+    class="cert-badge cert-badge-progress glass-card"
+    aria-label="AWS Certified Cloud Practitioner Currently Studying"
+  >
+
+    <div class="cert-issuer-mark cert-aws">
+      AWS
+    </div>
+
+    <div class="cert-info">
+
+      <span class="cert-name">
+        Certified Cloud Practitioner
+      </span>
+
+      <span class="cert-issuer">
+        Amazon Web Services
+      </span>
+
+      <span class="cert-studying-badge">
+        <span class="studying-dot"></span>
+        Currently Studying
+      </span>
+
+    </div>
+
+
+    <span class="cert-progress-ring cert-aws-progress" aria-hidden="true">
+
+      <svg viewBox="0 0 36 36" width="36" height="36">
+
+        <circle
+          cx="18"
+          cy="18"
+          r="15.9"
+          fill="none"
+          stroke="rgba(255,255,255,0.08)"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="18"
+          cy="18"
+          r="15.9"
+          fill="none"
+          stroke="#FF9900"
+          stroke-width="2"
+          stroke-dasharray="45 100"
+          stroke-dashoffset="25"
+          stroke-linecap="round"
+          transform="rotate(-90 18 18)"
+        />
+
+      </svg>
+
+    </span>
+
+  </div>
+
+</div>
+      
+    </div>
+  </section>
+
+  <!-- ===================== TRANSITION ===================== -->
+  <section class="transition-section" id="transition">
+    <div class="transition-inner">
+      <p class="section-eyebrow">BEYOND SYSTEMS AND NETWORKS.</p>
+
+<h2 class="section-title">
+    Sometimes, I just like to look through a different lens.
+</h2>
+
+<p class="photography-description">
+    Photography is where I slow down, explore, and capture whatever catches my eye.
+</p>
+      <div class="transition-divider" aria-hidden="true">
+        <span></span><span class="divider-star">✦</span><span></span>
+      </div>
+    </div>
+  </section>
+
+<!-- ===================== PHOTOGRAPHY ===================== -->
+<section class="photography" id="photography">
+
+  <div class="section-inner">
+
+    <p class="section-eyebrow" style="color:var(--p3-gold)">
+      Photography
+    </p>
+
+    <h2 class="section-title">
+      The other lens.
+    </h2>
+
+    <p class="photo-intro">
+      A collection of moments, details, places, and skies.
+      The full archive is still being curated.
+    </p>
+
+
+    <!-- Featured Instagram Portfolio -->
+    <a
+      href="https://www.instagram.com/_.thelenslady._?igsh=cDJkZzhwb3NlZmxt&igsi=cDJkZzhwb3NlZmxt"
+      class="instagram-feature"
+      target="_blank"
+      rel="noopener"
+      aria-label="View thelenslady photography portfolio on Instagram"
+    >
+
+     <div class="instagram-feature-left">
+
+  <div class="celestial-viewfinder">
+
+    <!-- Outer observation frame -->
+    <div class="viewfinder-frame">
+
+      <!-- Stars -->
+      <span class="vf-star vf-star-one">✦</span>
+      <span class="vf-star vf-star-two">·</span>
+      <span class="vf-star vf-star-three">✧</span>
+      <span class="vf-star vf-star-four">·</span>
+
+      <!-- Focus rings -->
+      <div class="focus-ring focus-ring-one"></div>
+      <div class="focus-ring focus-ring-two"></div>
+
+      <!-- Moon -->
+      <div class="viewfinder-moon"></div>
+
+      <!-- Crosshair -->
+      <div class="viewfinder-crosshair">
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+    <span class="viewfinder-caption">OBSERVING</span>
+
+  </div>
+
+</div>
+
+
+      <div class="instagram-feature-content">
+
+        <span class="portfolio-label">
+          Photography Portfolio
+        </span>
+
+        <h3>thelenslady</h3>
+
+        <p>
+          Frames, skies, streets, details, and everything
+          that caught my attention long enough to stay.
+        </p>
+
+        <span class="instagram-link">
+          View on Instagram
+          <span>↗</span>
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <!-- Archive Preview -->
+    <div class="photo-archive">
+
+      <div class="archive-heading">
+
+        <span class="archive-line"></span>
+
+        <p>Selected frames are on their way</p>
+
+        <span class="archive-line"></span>
+
+      </div>
+
+
+      <div class="coming-soon-grid">
+
+        <!-- Card 1 -->
+        <div class="coming-card coming-card-tall">
+
+          <div class="coming-card-symbol">
+            ✦
+          </div>
+
+          <div class="coming-card-content">
+
+            <span>ASTROPHOTOGRAPHY</span>
+
+            <p>More through the lens, soon.</p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="coming-card">
+
+          <div class="coming-card-symbol">
+            ◌
+          </div>
+
+          <div class="coming-card-content">
+
+            <span>STREET</span>
+
+            <p>A few stories are still developing.</p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="coming-card">
+
+          <div class="coming-card-symbol">
+            △
+          </div>
+
+          <div class="coming-card-content">
+
+            <span>ARCHITECTURE</span>
+
+            <p>More perspectives coming soon.</p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="coming-card coming-card-wide">
+
+          <div class="coming-card-symbol">
+            ☾
+          </div>
+
+          <div class="coming-card-content">
+
+            <span>MORE TO COME</span>
+
+            <p>
+              The archive is still being curated.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Keep existing constellation layer -->
+    <canvas
+      class="constellation-canvas"
+      id="constellation-canvas"
+      aria-hidden="true"
+    ></canvas>
+
+  </div>
+
+</section>
+
+  <!-- ===================== CREATIVE PHILOSOPHY ===================== -->
+  <section class="philosophy" id="philosophy">
+    <div class="section-inner">
+      <p class="section-eyebrow" style="color:var(--p3-gold)">Creative Philosophy</p>
+
+      <div class="philosophy-grid">
+        <div class="philosophy-quote-col">
+          <blockquote class="philosophy-pullquote">
+            "Both disciplines ask you to be still,
+            to wait for the pattern to reveal itself —
+            and then act before it disappears."
+          </blockquote>
+        </div>
+        <div class="philosophy-text-col">
+          <p>
+            Cybersecurity and photography are built on the same instinct. Both require
+            you to observe more than you react. Both reward patience over speed. Both
+            ask you to notice what isn't there as much as what is.
+          </p>
+          <p>
+            In a SOC, I look for the signal hidden in noise — the one log entry that
+            doesn't fit, the one connection that shouldn't be there. Behind a camera,
+            I look for the frame within the frame — the geometry the eye skips over,
+            the light that only lasts a few seconds.
+          </p>
+          <p>
+            The telescope is not a metaphor I chose casually. Astronomers and security
+            analysts both spend a lot of time in the dark, waiting for something small
+            to become something significant.
+          </p>
+        </div>
+      </div>
+
+      <div class="philosophy-pillars">
+        <div class="philosophy-pillar">
+          <span class="pillar-num">01</span>
+          <h3>Observation</h3>
+          <p>See before you act. The most important data is often the quietest.</p>
+        </div>
+        <div class="philosophy-pillar">
+          <span class="pillar-num">02</span>
+          <h3>Patience</h3>
+          <p>Good patterns take time to emerge. Rushing usually means missing them.</p>
+        </div>
+        <div class="philosophy-pillar">
+          <span class="pillar-num">03</span>
+          <h3>Precision</h3>
+          <p>Whether it's a packet or a frame — the details are where the meaning lives.</p>
+        </div>
+        <div class="philosophy-pillar">
+          <span class="pillar-num">04</span>
+          <h3>Curiosity</h3>
+          <p>Never stop asking what you might be missing. That question drives everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow" style="color:var(--p3-gold)">Get In Touch</p>
+      <h2 class="section-title">Let's build something together.</h2>
+      <p class="contact-intro">
+        Open to discussions about cybersecurity, research collaborations, open-source projects,
+        photography, or anything in between.
+      </p>
+
+      <div class="contact-grid">
+
+      <div class="contact-links-col">
+
+  <div
+    class="social-constellation"
+    id="social-constellation"
+  >
+
+    <svg
+      class="constellation-lines"
+      viewBox="0 0 500 430"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+
+      <!-- Email → LinkedIn -->
+      <line x1="250" y1="52"
+            x2="120" y2="189" />
+
+      <!-- Email → GitHub -->
+      <line x1="250" y1="52"
+            x2="380" y2="189" />
+
+      <!-- LinkedIn → GitHub -->
+      <line x1="120" y1="189"
+            x2="380" y2="189" />
+
+      <!-- LinkedIn → Instagram -->
+      <line x1="120" y1="189"
+            x2="120" y2="344" />
+
+      <!-- GitHub → Medium -->
+      <line x1="380" y1="189"
+            x2="380" y2="344" />
+
+    </svg>
+
+
+    <!-- EMAIL -->
+
+    <a
+      href="mailto:rewashukla04@gmail.com"
+      class="constellation-star star-email"
+      data-platform="Email"
+      aria-label="Email"
+    >
+
+      <span class="star-icon">
+       <img src="assets/email.png" alt="Email">
+      </span>
+
+      <span class="star-label">
+        Email
+      </span>
+
+    </a>
+
+
+    <!-- LINKEDIN -->
+
+    <a
+      href="https://www.linkedin.com/in/rewa-shukla-320b02301"
+      target="_blank"
+      rel="noopener"
+      class="constellation-star star-linkedin"
+      data-platform="LinkedIn"
+      aria-label="LinkedIn"
+    >
+
+      <span class="star-icon">
+        <img src="assets/linkedin.png" alt="">
+      </span>
+
+      <span class="star-label">
+        LinkedIn
+      </span>
+
+    </a>
+
+
+    <!-- GITHUB -->
+
+    <a
+      href="https://github.com/RewaS10"
+      target="_blank"
+      rel="noopener"
+      class="constellation-star star-github"
+      data-platform="GitHub"
+      aria-label="GitHub"
+    >
+
+      <span class="star-icon">
+        <img src="assets/github.png" alt="">
+      </span>
+
+      <span class="star-label">
+        GitHub
+      </span>
+
+    </a>
+
+
+    <!-- INSTAGRAM -->
+
+    <a
+      href="https://www.instagram.com/_.thelenslady._?igsh=cDJkZzhwb3NlZmxt&igsi=cDJkZzhwb3NlZmxt"
+      target="_blank"
+      rel="noopener"
+      class="constellation-star star-instagram"
+      data-platform="Instagram"
+      aria-label="Instagram"
+    >
+
+      <span class="star-icon">
+       <img src="assets/instagram.png" alt="">
+      </span>
+
+      <span class="star-label">
+        Instagram
+      </span>
+
+    </a>
+
+
+    <!-- MEDIUM -->
+
+    <a
+      href="https://medium.com/@rewa.shukla1003"
+      target="_blank"
+      rel="noopener"
+      class="constellation-star star-medium"
+      data-platform="Medium"
+      aria-label="Medium"
+    >
+
+      <span class="star-icon">
+        <img src="assets/medium.png" alt="">
+      </span>
+
+      <span class="star-label">
+        Medium
+      </span>
+
+    </a>
+
+
+    <div
+      class="constellation-status"
+      id="constellation-status"
+      aria-live="polite"
+    ></div>
+
+  </div>
+
+</div>
+
+ <!-- RIGHT: CONTACT FORM -->
+
+  <form
+    class="contact-form glass-card"
+    id="contact-form"
+    novalidate
+  >
+
+    <h3>Send a Message</h3>
+
+    <div class="form-group">
+      <label for="cf-name">Name</label>
+
+      <input
+        type="text"
+        id="cf-name"
+        name="name"
+        placeholder="Your name"
+        required
+      >
+    </div>
+
+
+    <div class="form-group">
+      <label for="cf-email">Email</label>
+
+      <input
+        type="email"
+        id="cf-email"
+        name="email"
+        placeholder="your@email.com"
+        required
+      >
+    </div>
+
+
+    <div class="form-group">
+
+      <label for="cf-subject">
+        Subject
+      </label>
+
+      <select
+        id="cf-subject"
+        name="subject"
+      >
+
+        <option value="">
+          Select a topic
+        </option>
+
+        <option>Cybersecurity</option>
+        <option>Research Collaboration</option>
+        <option>Open Source</option>
+        <option>Photography</option>
+        <option>Other</option>
+
+      </select>
+
+    </div>
+
+
+    <div class="form-group">
+
+      <label for="cf-message">
+        Message
+      </label>
+
+      <textarea
+        id="cf-message"
+        name="message"
+        rows="5"
+        placeholder="Tell me what's on your mind..."
+        required
+      ></textarea>
+
+    </div>
+
+
+    <button
+      type="submit"
+      class="btn btn-primary form-submit"
+    >
+      Send Message
+    </button>
+
+
+    <p
+      class="form-note"
+      id="form-status"
+      aria-live="polite"
+    ></p>
+
+  </form>
+
+</div>
+  </section>
+
+</main>
+
+<!-- Architecture diagram modal (shared) -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box glass-card">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    <h3 id="modal-title">Architecture</h3>
+    <div id="modal-body" class="modal-body"></div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+  <div class="lightbox-inner" id="lightbox-inner">
+    <div class="lightbox-ph" id="lightbox-ph">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+  <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+  <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">&#8250;</button>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer-block" id="footer">
+  <div class="footer-stars-canvas-wrap" aria-hidden="true">
+    <canvas id="footer-canvas"></canvas>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-mark">RS</div>
+    <p class="footer-statement">
+      Built with curiosity, creativity, and countless late nights beneath the stars.
+    </p>
+    <div class="footer-links">
+      <a href="mailto:rewa@example.com">Email</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">Medium</a>
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Rewa Shukla &mdash; Designed &amp; built with passion.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
